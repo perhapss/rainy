@@ -1,0 +1,1010 @@
+/**
+*author: yjc
+*time:2017.8.18
+*/
+/*custom css start*/
+*{
+    box-sizing: border-box;
+}
+.dib{
+    display: inline-block;
+    vertical-align: middle;
+}
+/*custom css end*/
+html, body{
+    width: 100%;
+    height: 100%;
+}
+.swiper-container{
+    width: 100%;
+    height: 100%;
+    background: #fa4f4f;
+}
+.swiper-slide{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+    visibility: hidden;
+}
+.swiper-slide-active{
+    visibility: visible;
+}
+/*first page start*/
+.logo-piece{
+    position: fixed;
+    top: .3rem;
+    left: 50%;
+    margin-left: -1.15rem;
+    z-index: 2;
+    width: 2.3rem;
+    height: .88rem;
+    background: url(../images/logo.png) no-repeat;
+    background-size: cover;
+}
+.first-page-bg{
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/page1-bg.png) center bottom no-repeat;
+    background-size: 100% auto;
+}
+.swiper-slide-active .first-page-bg{
+    -webkit-animation: fadeInUp 1s ease .5s both;
+    animation: fadeInUp 1s ease .5s both;
+}
+.first-page>.peoples{
+    position: absolute;
+    z-index: 1;
+    bottom: 4.18rem;
+    left: 50%;
+    margin-left: -1.31rem;
+    width: 1.95rem;
+    height: 3.99rem;
+    background: url(../images/peoples.png) center bottom no-repeat;
+    background-size: 100% auto;
+}
+.swiper-slide-active>.peoples{
+    -webkit-animation: fadeInUp 1s ease 9s both;
+    animation: fadeInUp 1s ease 9s both;
+}
+.first-page>.peoples>.heart{
+    position: absolute;
+    z-index: 1;
+}
+.first-page>.peoples>.heart1,.first-page>.peoples>.heart5{
+    top: -.1rem;
+    left: .8rem;
+    width: .32rem;
+    height: .32rem;
+    background: url(../images/heart1.png) center bottom no-repeat;
+    background-size: cover;
+}
+.first-page>.peoples>.heart2,.first-page>.peoples>.heart4{
+    top: 0;
+    left: 1rem;
+    width: .21rem;
+    height: .21rem;
+    background: url(../images/heart2.png) center bottom no-repeat;
+    background-size: cover;
+}
+.first-page>.peoples>.heart3,.first-page>.peoples>.heart6{
+    top: -.02rem;
+    right: -.14rem;
+    width: .52rem;
+    height: .52rem;
+    background: url(../images/heart3.png) center bottom no-repeat;
+    background-size: cover;
+}
+.swiper-slide-active>.peoples>.heart1{
+    -webkit-animation: waveHeart1 4s ease 9.5s infinite both;
+    animation: waveHeart1 4s ease 9.5s infinite both;
+}
+.swiper-slide-active>.peoples>.heart2{
+    -webkit-animation: waveHeart2 4s ease 10.5s infinite both;
+    animation: waveHeart2 4s ease 10.5s infinite both;
+}
+.swiper-slide-active>.peoples>.heart4{
+    -webkit-animation: waveHeart1 4s ease 11.5s infinite both;
+    animation: waveHeart1 4s ease 11.5s infinite both;
+}
+.swiper-slide-active>.peoples>.heart5{
+    -webkit-animation: waveHeart2 4s ease 12.5s infinite both;
+    animation: waveHeart2 4s ease 12.5s infinite both;
+}
+.swiper-slide-active>.peoples>.heart3{
+    -webkit-animation: waveHeart3 4s ease 9.5s infinite both;
+    animation: waveHeart3 4s ease 9.5s infinite both;
+}
+.swiper-slide-active>.peoples>.heart6{
+    -webkit-animation: waveHeart3 4s ease 11.5s infinite both;
+    animation: waveHeart3 4s ease 11.5s infinite both;
+}
+/*words*/
+.first-page>.words-group{
+    position: absolute;
+    z-index: 3;
+    top: 37%;
+    left: 50%;
+    width: 3.94rem;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+.first-page>.words-group>.sorry{
+    width: 2.62rem;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: .8rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: .15em;
+    margin-left: .65rem;
+}
+.swiper-slide-active>.words-group>.sorry{
+    -webkit-animation: typing 2s 1s steps(3) both, caret 0.5s 1.5s steps(1) 3;
+    animation: typing 2s 1s steps(3) both, caret 0.5s 1.5s steps(1) 3;
+}
+.first-page>.words-group>.describe{
+    width: 3.7rem;
+    overflow: hidden;
+    white-space: nowrap;
+    /*font-size: .46rem;*/
+    font-weight: 100;
+    color: #fff;
+    letter-spacing: .1em;
+    margin-top: .18rem;
+    font-size: 0;
+}
+.swiper-slide-active>.words-group>.describe{
+    -webkit-animation: typing 4s 3.5s steps(8) both, caret 0.5s 4s steps(1) 7;
+    animation: typing 4s 3.5s steps(8) both, caret 0.5s 4s steps(1) 7;
+}
+.first-page>.words-group>.describe>span{
+    white-space: nowrap;
+    font-size: .46rem;
+    font-weight: 100;
+    color: #fff;
+}
+.swiper-slide-active>.words-group>.describe>.especially{
+    -webkit-animation: rubberBandA 1s ease 7.5s both;
+    animation: rubberBandA 1s ease 7.5s both;
+}
+.first-page>.words-group>.sign{
+    position: absolute;
+    z-index: 3;
+    width: .25rem;
+    height: .25rem;
+    background: url(../images/signs.png) no-repeat;
+    background-size: cover;
+}
+.first-page>.words-group>.sign-pre{
+    top: .02rem;
+    left: .13rem;
+}
+.swiper-slide-active>.words-group>.sign-pre{
+    -webkit-animation: bounceInDown 1.5s ease 7.5s both;
+    animation: bounceInDown 1.5s ease 7.5s both;
+}
+.first-page>.words-group>.sign-next{
+    bottom: .22rem;
+    right: -.42rem;
+    background-position: -.25rem 0;
+}
+.swiper-slide-active>.words-group>.sign-next{
+    -webkit-animation: bounceInUp 1.5s ease 8s both;
+    animation: bounceInUp 1.5s ease 8s both;
+}
+.page-mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+}
+.page-mask-piece{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: rgba(206, 7, 18, .9);
+}
+.page-mask>.married{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+    margin: -.35rem 0 0 -2rem;
+    width: 4rem;
+    height: .7rem;
+    font-size: 0;
+    text-align: center;
+}
+.page-mask>.married:before{
+    position: absolute;
+    top: -.01rem;
+    left: 0;
+    width: 0;
+    height: 0;
+    display: block;
+    content: "";
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    box-sizing: border-box;
+}
+.page-mask>.married:after{
+    position: absolute;
+    bottom: -.01rem;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    content: "";
+    border-bottom: 1px solid #fff;
+    border-left: 1px solid #fff;
+    box-sizing: border-box;
+}
+.page-mask>.married>span{
+    font-size: 0;
+}
+.page-mask>.married>span>span{
+    font-size: .32rem;
+    line-height: .66rem;
+    color: #fff;
+}
+.page-mask>.married>span>.because-txt{
+    width: 1.3rem;
+    height: .66rem;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.page-mask>.married>span>.strong-txt{
+    font-weight: 700;
+}
+.page-mask>.married>i{
+    width: .23rem;
+    height: .23rem;
+    background: url(../images/arrow.png) no-repeat;
+    background-size: cover;
+    margin: .02rem 0 0 .15rem;
+}
+.swiper-slide-active .page-mask{
+    -webkit-animation: fadeIn 1s ease 10s both;
+    animation: fadeIn 1s ease 10s both;
+}
+.swiper-slide-active .page-mask-piece{
+    -webkit-animation: fadeOut 1s ease 17s both;
+    animation: fadeOut 1s ease 17s both;
+}
+.swiper-slide-active>.page-mask>.married{
+    -webkit-animation: topA 1s ease 16.5s both;
+    animation: topA 1s ease 16.5s both;
+}
+.swiper-slide-active>.page-mask>.married:before{
+    -webkit-animation: widthFull 1s linear 14s both, borderRadius .5s linear 16s both;
+    animation: widthFull 1s linear 14s both, borderRadius .5s linear 16s both;
+}
+.swiper-slide-active>.page-mask>.married:after{
+    -webkit-animation: widthFull 1s linear 15s both, borderRadius .5s linear 16s both;
+    animation: widthFull 1s linear 15s both, borderRadius .5s linear 16s both;
+}
+.swiper-slide-active>.page-mask>.married>span>.because-txt{
+    -webkit-animation: typing 2s 11s steps(4) both, caret 0.5s 11.5s steps(1) 4;
+    animation: typing 2s 11s steps(4) both, caret 0.5s 11.5s steps(1) 4;
+}
+.swiper-slide-active>.page-mask>.married>span>.strong-txt{
+    -webkit-animation: bounceInDown 1s ease 13.5s both;
+    animation: bounceInDown 1s ease 13.5s both;
+}
+.swiper-slide-active>.page-mask>.married>i{
+    -webkit-animation: fadeInUp 1s ease 13.5s both, upTop .8s ease-in 14s infinite alternate both;
+    animation: fadeInUp 1s ease 13.5s both, upTop .8s ease-in 14s infinite alternate both;
+}
+/*first page end*/
+/*second page start*/
+.second-page-bg{
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/page2-bg.png) center 1.7rem no-repeat;
+    background-size: 100% auto;
+}
+.swiper-slide-active .second-page-bg{
+    -webkit-animation: fadeInUp 1s ease .5s both;
+    animation: fadeInUp 1s ease .5s both;
+}
+.page-words-group{
+    position: absolute;
+    top: 30%;
+    left: 0;
+    text-align: left;
+    width: 100%;
+}
+.page-words-group>.words-main{
+    width: 5.15rem;
+    margin: 0 auto;
+}
+.page-words-group .txt-group{
+    float: left;
+    width: 3.2rem;
+}
+.page-words-group .txt-group>p{
+    color: #fff;
+    font-weight: 100;
+    /*overflow: hidden;*/
+    white-space: nowrap;
+    font-size: 0;
+}
+.second-page>.page-words-group .txt-group>.words1{
+    width: 3.2rem;
+    font-size: .53rem;
+}
+.second-page>.page-words-group .txt-group>.words2{
+    width: 3.15rem;
+    font-size: .45rem;
+    margin-top: .12rem;
+}
+.second-page>.page-words-group .txt-group>.words3{
+    width: 3.2rem;
+    font-size: .65rem;
+    margin-top: .02rem;
+}
+.second-page>.page-words-group .txt-group>.words1>.words-txt{
+    width: 2.13rem;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.second-page>.page-words-group .txt-group>.words2>.words-txt{
+    width: 1.76rem;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.second-page>.page-words-group .txt-group>.words3>.words-txt{
+    width: 1.31rem;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.page-words-group .txt-group>p>.strong-txt{
+    font-weight: 700;
+}
+.page-words-group .home-txt{
+    position: relative;
+    float: right;
+    width: 1.8rem;
+    height: 1.9rem;
+    font-size: 0;
+    margin-top: .15rem;
+}
+.page-words-group .home-txt>span{
+    width: 1.8rem;
+    height: 1.9rem;
+    font-size: 1.46rem;
+    line-height: 1.9rem;
+    text-align: center;
+    color: #fa4f4f;
+    background: #fff;
+    font-weight: 700;
+    padding-top: .1rem;
+}
+.page-words-group .home-txt:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    display: block;
+    content: "";
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    box-sizing: border-box;
+}
+.page-words-group .home-txt:after{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    display: block;
+    content: "";
+    border-bottom: 1px solid #fff;
+    border-left: 1px solid #fff;
+    box-sizing: border-box;
+}
+.second-page>.page-words-group>.words-prompt{
+    position: relative;
+    font-size: .3rem;
+    color: #fa4f4f;
+    font-weight: 100;
+    background: #ffee9d;
+    text-align: center;
+    line-height: .36rem;
+    width: 5.15rem;
+    margin: .25rem auto 0;
+}
+.second-page>.page-words-group>.words-prompt>span{
+    font-weight: 700;
+}
+.second-page>.page-words-group>.words-prompt>.fork{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 100%;
+    height:.36rem;
+    background: url(../images/fork.png) no-repeat;
+    background-size: cover;
+    display: block;
+}
+.second-page>.page-words-group>.words-prompt>.fork>img{
+    width: 100%;
+}
+.page-advert{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.page-advert>img{
+    width: 100%;
+}
+.swiper-slide-active>.page-advert{
+    -webkit-animation: fadeInUp 1s linear 5.5s both;
+    animation: fadeInUp 1s linear 5.5s both;
+}
+.swiper-slide-active>.page-words-group>.words-prompt{
+    -webkit-animation: fadeInUp .5s linear 5s both;
+    animation: fadeInUp .5s linear 5s both;
+}
+.swiper-slide-active>.page-words-group .home-txt:before{
+    -webkit-animation: widthFull50 .5s linear 3.5s both;
+    animation: widthFull50 .5s linear 3.5s both;
+}
+.swiper-slide-active>.page-words-group .home-txt:after{
+    -webkit-animation: widthFull50 .5s linear 4s both;
+    animation: widthFull50 .5s linear 4s both;
+}
+.swiper-slide-active>.page-words-group .home-txt>span{
+    -webkit-animation: bounceIn 1s ease 4.5s both;
+    animation: bounceIn 1s ease 4.5s both;
+}
+.second-page.swiper-slide-active>.page-words-group .txt-group>.words1>.strong-txt{
+    -webkit-animation: bounceInDown 1s ease .5s both;
+    animation: bounceInDown 1s ease .5s both;
+}
+.second-page.swiper-slide-active>.page-words-group .txt-group>.words2>.strong-txt{
+    -webkit-animation: fadeInDown 1s ease 2s both;
+    animation: fadeInDown 1s ease 2s both;
+}
+.second-page.swiper-slide-active>.page-words-group .txt-group>.words3>.strong-txt{
+    -webkit-animation: fadeInDown 1s ease 3s both;
+    animation: fadeInDown 1s ease 3s both;
+}
+.second-page.swiper-slide-active>.page-words-group .txt-group>.words1>.words-txt{
+    -webkit-animation: fadeInUp 1s ease 1s both;
+    animation: fadeInUp 1s ease 1s both;
+}
+.second-page.swiper-slide-active>.page-words-group .txt-group>.words2>.words-txt{
+    -webkit-animation: fadeInUp 1s ease 1.5s both;
+    animation: fadeInUp 1s ease 1.5s both;
+}
+.second-page.swiper-slide-active>.page-words-group .txt-group>.words3>.words-txt{
+    -webkit-animation: fadeInUp 1s ease 2.5s both;
+    animation: fadeInUp 1s ease 2.5s both;
+}
+.second-page>.second-page-bg>.heart{
+    position: absolute;
+    z-index: 9;
+}
+.second-page>.second-page-bg>.heart1,.second-page>.second-page-bg>.heart5{
+    top: 2.75rem;
+    left: 1.7rem;
+    width: .32rem;
+    height: .32rem;
+    background: url(../images/heart01.png) no-repeat;
+    background-size: cover;
+}
+.second-page>.second-page-bg>.heart2,.second-page>.second-page-bg>.heart4{
+    top: 2.75rem;
+    left: 1.7rem;
+    width: .21rem;
+    height: .21rem;
+    background: url(../images/heart02.png) no-repeat;
+    background-size: cover;
+}
+.second-page>.second-page-bg>.heart3,.second-page>.second-page-bg>.heart6{
+    top: 2.75rem;
+    left: 2.4rem;
+    width: .52rem;
+    height: .52rem;
+    background: url(../images/heart03.png) center bottom no-repeat;
+    background-size: cover;
+}
+.swiper-slide-active>.second-page-bg>.heart1{
+    -webkit-animation: heart1 4s ease .5s infinite both;
+    animation: heart1 4s ease .5s infinite both;
+}
+.swiper-slide-active>.second-page-bg>.heart2{
+    -webkit-animation: heart2 4s ease 1.5s infinite both;
+    animation: heart2 4s ease 1.5s infinite both;
+}
+.swiper-slide-active>.second-page-bg>.heart4{
+    -webkit-animation: heart2 4s ease 3.5s infinite both;
+    animation: heart2 4s ease 3.5s infinite both;
+}
+.swiper-slide-active>.second-page-bg>.heart5{
+    -webkit-animation: heart1 4s ease 2.5s infinite both;
+    animation: heart1 4s ease 2.5s infinite both;
+}
+.swiper-slide-active>.second-page-bg>.heart3{
+    -webkit-animation: heart2 5s ease 1.5s infinite both;
+    animation: heart2 5s ease 1.5s infinite both;
+}
+.swiper-slide-active>.second-page-bg>.heart6{
+    -webkit-animation: heart2 5s ease 4s infinite both;
+    animation: heart2 5s ease 4s infinite both;
+}
+/*second page end*/
+/*third page start*/
+.third-page>.second-page-bg{
+    background: url(../images/page3-bg.png) center 6.2rem no-repeat;
+    background-size: 100% auto;
+}
+.third-page>.page-words-group{
+    top: 20%;
+    width: 100%;
+}
+.third-page>.page-words-group .txt-group .words-txt{
+    overflow: hidden;
+}
+.third-page>.page-words-group .txt-group{
+    width: 3.3rem;
+}
+.third-page>.page-words-group .txt-group>.words1{
+    font-size: .53rem;
+}
+.third-page>.page-words-group .txt-group>.words2{
+    font-size: .4rem;
+    margin-top: .17rem;
+}
+.third-page>.page-words-group .txt-group>.words3{
+    font-size: 1.14rem;
+    margin-top: -.15rem;
+}
+.third-page>.page-words-group .txt-group>.words1>.words-txt{
+    width: 2.13rem;
+}
+.third-page>.page-words-group .txt-group>.words2>.words-txt{
+    width: 2.01rem;
+}
+.third-page>.page-words-group .txt-group>.words3>.words-txt{
+    width: 3.28rem;
+}
+.third-page>.page-words-group .home-txt{
+    width: 1.8rem;
+    height: 2.25rem;
+}
+.third-page>.page-words-group .home-txt>span{
+    width: 1.8rem;
+    height: 2.25rem;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    padding-top: .1rem;
+}
+.third-page .words-prompt{
+    margin-top: .15rem;
+}
+.words-prompt{
+    width: 5.15rem;
+    margin: 0 auto 0;
+}
+.words-prompt>img{
+    width: 100%;
+}
+.third-page.swiper-slide-active>.page-words-group .txt-group>.words1>.strong-txt{
+    -webkit-animation: bounceInDown 1s ease 1s both;
+    animation: bounceInDown 1s ease 1s both;
+}
+.third-page.swiper-slide-active>.page-words-group .txt-group>.words2>.strong-txt{
+    -webkit-animation: fadeInDown 1s ease 2.5s both;
+    animation: fadeInDown 1s ease 2.5s both;
+}
+.third-page.swiper-slide-active>.page-words-group .txt-group>.words1>.words-txt{
+    -webkit-animation: fadeInUp 1s ease 1.5s both;
+    animation: fadeInUp 1s ease 1.5s both;
+}
+.third-page.swiper-slide-active>.page-words-group .txt-group>.words2>.words-txt{
+    -webkit-animation: fadeInUp 1s ease 2s both;
+    animation: fadeInUp 1s ease 2s both;
+}
+.third-page.swiper-slide-active>.page-words-group .txt-group>.words3>.words-txt{
+    -webkit-animation: fadeInUp 1s ease 3s both;
+    animation: fadeInUp 1s ease 3s both;
+}
+.third-page.swiper-slide-active>.page-advert{
+    -webkit-animation-delay: 5.5s;
+    animation-delay: 5.5s;
+}
+.third-page.swiper-slide-active>.page-words-group>.words-prompt{
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+}
+.third-page.swiper-slide-active>.page-words-group .home-txt:before{
+    -webkit-animation-delay: 3.5s;
+    animation-delay: 3.5s;
+}
+.third-page.swiper-slide-active>.page-words-group .home-txt:after{
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+}
+.third-page.swiper-slide-active>.page-words-group .home-txt>span{
+    -webkit-animation-delay: 4.5s;
+    animation-delay: 4.5s;
+}
+.third-page.swiper-slide-active>.second-page-bg{
+    -webkit-animation-delay: 5.5s;
+    animation-delay: 5.5s;
+}
+.third-page>.second-page-bg>.heart{
+    position: absolute;
+    z-index: 1;
+}
+.third-page>.second-page-bg>.heart1,.third-page>.second-page-bg>.heart5{
+    top: 6.35rem;
+    left: 3.7rem;
+    width: .32rem;
+    height: .32rem;
+    background: url(../images/heart1.png) no-repeat;
+    background-size: cover;
+}
+.third-page>.second-page-bg>.heart2,.third-page>.second-page-bg>.heart4{
+    top: 6.35rem;
+    left: 3.7rem;
+    width: .21rem;
+    height: .21rem;
+    background: url(../images/heart2.png) no-repeat;
+    background-size: cover;
+}
+.third-page>.second-page-bg>.heart3,.third-page>.second-page-bg>.heart6{
+    top: 6.6rem;
+    right: .7rem;
+    width: .52rem;
+    height: .52rem;
+    background: url(../images/heart3.png) center bottom no-repeat;
+    background-size: cover;
+}
+/*third page start*/
+/*fourth page start*/
+.fourth-page>.second-page-bg{
+    background: url(../images/page4-bg.png) center 1.67rem no-repeat;
+    background-size: 100% auto;
+}
+.fourth-page>.page-words-group .txt-group>.words1{
+    font-size: .61rem;
+}
+.fourth-page>.page-words-group .txt-group>.words2{
+    font-size: .94rem;
+    margin-top: -.06rem;
+}
+.fourth-page>.page-words-group .txt-group>.words3{
+    font-size: .94rem;
+    margin-top: -.13rem;
+}
+.fourth-page>.page-words-group .home-txt{
+    width: 1.35rem;
+    height: 2.57rem;
+    margin-top: .18rem;
+}
+.fourth-page>.page-words-group .home-txt>span{
+    font-size: 1.05rem;
+    width: 1.35rem;
+    height: 2.57rem;
+    line-height: 1.25rem;
+    padding-top: .1rem;
+}
+.fourth-page .words-prompt{
+    margin-top: .1rem;
+}
+.fourth-page>.second-page-bg>.heart{
+    position: absolute;
+    z-index: 3;
+}
+.fourth-page>.second-page-bg>.heart1,.fourth-page>.second-page-bg>.heart5{
+    top: 2rem;
+    left: 1.8rem;
+    width: .32rem;
+    height: .32rem;
+    background: url(../images/heart1.png) no-repeat;
+    background-size: cover;
+}
+.fourth-page>.second-page-bg>.heart2,.fourth-page>.second-page-bg>.heart4{
+    top: 2rem;
+    left: 1.8rem;
+    width: .21rem;
+    height: .21rem;
+    background: url(../images/heart2.png) no-repeat;
+    background-size: cover;
+}
+.fourth-page>.second-page-bg>.heart3,.fourth-page>.second-page-bg>.heart6{
+    top: 2.25rem;
+    right: 2.8rem;
+    width: .52rem;
+    height: .52rem;
+    background: url(../images/heart3.png) center bottom no-repeat;
+    background-size: cover;
+}
+.fourth-page.swiper-slide-active>.page-words-group .txt-group>.words1>.strong-txt{
+    -webkit-animation: bounceInDown 1s ease 1s both;
+    animation: bounceInDown 1s ease 1s both;
+}
+.fourth-page.swiper-slide-active>.page-words-group .txt-group>.words1>.words-txt{
+    -webkit-animation: fadeInUp 1s ease 1.5s both;
+    animation: fadeInUp 1s ease 1.5s both;
+}
+.fourth-page.swiper-slide-active>.page-words-group .txt-group>.words2>.strong-txt{
+    -webkit-animation: rotateIn 1s ease 2s both;
+    animation: rotateIn 1s ease 2s both;
+}
+.fourth-page.swiper-slide-active>.page-words-group .txt-group>.words2>.words-txt{
+    -webkit-animation: fadeInUp 1s ease 2.5s both;
+    animation: fadeInUp 1s ease 2.5s both;
+}
+.fourth-page.swiper-slide-active>.page-words-group .txt-group>.words3>.words-txt{
+    -webkit-animation: fadeInUp 1s ease 3s both;
+    animation: fadeInUp 1s ease 3s both;
+}
+.fourth-page.swiper-slide-active>.page-advert{
+    -webkit-animation-delay: 5.5s;
+    animation-delay: 5.5s;
+}
+.fourth-page.swiper-slide-active>.page-words-group>.words-prompt{
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+}
+.fourth-page.swiper-slide-active>.page-words-group .home-txt:before{
+    -webkit-animation-delay: 3.5s;
+    animation-delay: 3.5s;
+}
+.fourth-page.swiper-slide-active>.page-words-group .home-txt:after{
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+}
+.fourth-page.swiper-slide-active>.page-words-group .home-txt>span{
+    -webkit-animation-delay: 4.5s;
+    animation-delay: 4.5s;
+}
+/*fourth page end*/
+/*fifth page start*/
+.fifth-page>.second-page-bg{
+    background: url(../images/page5-bg.png) center 2.3rem no-repeat;
+    background-size: 100% auto;
+}
+.fifth-page>.page-words-group .txt-group{
+    position: relative;
+    width: 3.45rem;
+}
+.fifth-page>.page-words-group .txt-group>.words1{
+    font-size: .59rem;
+}
+.fifth-page>.page-words-group .txt-group>.words2{
+    font-size: 1.41rem;
+    margin-top: -.14rem;
+}
+.fifth-page>.page-words-group .txt-group>.words3{
+    font-size: .49rem;
+    margin-top: -.02rem;
+}
+.fifth-page>.page-words-group .txt-group>.words4{
+    position: absolute;
+    top: 1.4rem;
+    right: 0;
+    font-size: .6rem;
+    margin-top: -.5rem;
+    width: .5rem;
+    font-weight: 400;
+}
+.fifth-page>.page-words-group .home-txt{
+    width: 1.46rem;
+    height: 2.79rem;
+    margin-top: .18rem;
+}
+.fifth-page>.page-words-group .home-txt>span{
+    font-size: 1.14rem;
+    width: 1.46rem;
+    height: 2.79rem;
+    line-height: 1.35rem;
+    padding-top: .1rem;
+}
+.fifth-page .words-prompt{
+    margin-top: .2rem;
+}
+.fifth-page.swiper-slide-active>.page-words-group .txt-group>.words1>.strong-txt{
+    -webkit-animation: bounceInDown 1s ease 1s both;
+    animation: bounceInDown 1s ease 1s both;
+}
+.fifth-page.swiper-slide-active>.page-words-group .txt-group>.words1>.words-txt{
+    -webkit-animation: fadeInUp 1s ease 1.5s both;
+    animation: fadeInUp 1s ease 1.5s both;
+}
+.fifth-page.swiper-slide-active>.page-words-group .txt-group>.words2>.strong-txt{
+    -webkit-animation: rotateIn 1s ease 3s both;
+    animation: rotateIn 1s ease 3s both;
+}
+.fifth-page.swiper-slide-active>.page-words-group .txt-group>.words3{
+    -webkit-animation: fadeInUp 1s ease 2.5s both;
+    animation: fadeInUp 1s ease 2.5s both;
+}
+.fifth-page.swiper-slide-active>.page-words-group .txt-group>.words4{
+    -webkit-animation: fadeInUp 1s ease 2s both;
+    animation: fadeInUp 1s ease 2s both;
+}
+.fifth-page.swiper-slide-active>.page-advert{
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+}
+.fifth-page.swiper-slide-active>.page-words-group>.words-prompt{
+    -webkit-animation-delay: 4.5s;
+    animation-delay: 4.5s;
+}
+.fifth-page.swiper-slide-active>.page-words-group .home-txt:before{
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+}
+.fifth-page.swiper-slide-active>.page-words-group .home-txt:after{
+    -webkit-animation-delay: 3.5s;
+    animation-delay: 3.5s;
+}
+.fifth-page.swiper-slide-active>.page-words-group .home-txt>span{
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+}
+/*fifth page end*/
+/*sixth page start*/
+.sixth-page>.page-words-group{
+    top: 2rem;
+}
+.sixth-page>.page-words-group>.words-main{
+    width: 5.05rem;
+    height: 2.86rem;
+}
+.sixth-page .words-main>.tit-box{
+    position: absolute;
+    top: 0;
+    left: .2rem;
+    z-index: 2;
+    width: 3.17rem;
+    height: 3.8rem;
+    background: url(../images/circle.png) no-repeat;
+    background-size: cover;
+}
+.sixth-page .words-main>.tit-box>img{
+    width: 100%;
+}
+.sixth-page .words-main>.txt-group{
+    float: right;
+}
+.sixth-page>.page-words-group .txt-group>.words1{
+    font-size: .5rem;
+}
+.sixth-page>.page-words-group .txt-group>.words2{
+    font-size: .98rem;
+    margin-top: -.1rem;
+}
+.sixth-page>.page-words-group .txt-group>.words3{
+    font-size: .98rem;
+    margin-top: -.12rem;
+}
+.sixth-page>.page-words-group .txt-group{
+    width: auto;
+}
+.sixth-page>.page-words-group>.words-prompt{
+    width: 4.8rem;
+    margin-top: .26rem;
+}
+.sixth-page.swiper-slide-active .words-main>.tit-box{
+    -webkit-animation: fadeInUp 1s ease .5s both;
+    animation: fadeInUp 1s ease .5s both;
+}
+.sixth-page.swiper-slide-active .words-main>.tit-box>img{
+    -webkit-animation: bounceInDown 1s ease .5s both;
+    animation: bounceInDown 1s ease .5s both;
+}
+.sixth-page.swiper-slide-active>.page-words-group .txt-group>.words1>.strong-txt{
+    -webkit-animation: bounceInDown 1s ease 2s both;
+    animation: bounceInDown 1s ease 2s both;
+}
+.sixth-page.swiper-slide-active>.page-words-group .txt-group>.words1>.words-txt{
+    -webkit-animation: fadeInUp 1s ease 1.5s both;
+    animation: fadeInUp 1s ease 1.5s both;
+}
+.sixth-page.swiper-slide-active>.page-words-group .txt-group>.words2>.strong-txt{
+    -webkit-animation: rotateIn 1s ease 2.5s both;
+    animation: rotateIn 1s ease 2.5s both;
+}
+.sixth-page.swiper-slide-active>.page-words-group .txt-group>.words3{
+    animation: fadeInUp 1s ease 3s both;
+    -webkit-animation: fadeInUp 1s ease 3s both;
+}
+.sixth-page.swiper-slide-active>.page-words-group>.words-prompt{
+    -webkit-animation-delay: 3.5s;
+    animation-delay: 3.5s;
+}
+.sixth-page.swiper-slide-active >.shear-form{
+    -webkit-animation: fadeInUp 1s ease 4s both;
+    animation: fadeInUp 1s ease 4s both;
+}
+.shear-form{
+    width: 5rem;
+    margin: 6.2rem auto 0;
+    text-align: center;
+}
+.shear-form>input{
+    width: 100%;
+    height: .68rem;
+    border: none;
+    outline: none;
+    padding: 0 .15rem;
+    border-radius: .1rem;
+    font-size: .36rem;
+    line-height: .68rem;
+    color: #333;
+}
+.shear-form>a{
+    width: 100%;
+    height: .68rem;
+    line-height: .68rem;
+    border-radius: .1rem;
+}
+.shear-form>.help-btn{
+    color: #fa4f4f;
+    background: #ffdd3c;
+    margin-top: .32rem;
+}
+.shear-form>.shear-btn{
+    position: relative;
+    color: #ffdd3c;
+    background: #d03a1d;
+    margin-top: .4rem;
+}
+.shear-form>.shear-btn>span{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.shear-form>.shear-btn>i{
+    position: absolute;
+    right: .2rem;
+    bottom: 0;
+    z-index: 1;
+    width: .86rem;
+    height: .86rem;
+    background: url(../images/shear-btn.png) no-repeat;
+    background-size: cover;
+}
+/*sixth page end*/
+.to-next-prompt{
+    position: absolute;
+    bottom: 2.6rem;
+    left: 50%;
+    margin-left: -.25rem;
+    width: .5rem;
+    height: .5rem;
+    background: url(../images/arrow.png) no-repeat;
+    background-size: cover;
+}
+.swiper-slide-active .to-next-prompt{
+    -webkit-animation: fadeInUp 1s ease 6s both, upTop .8s ease-in 6.5s infinite alternate both;
+    animation: fadeInUp 1s ease 6s both, upTop .8s ease-in 6.5s infinite alternate both;
+}

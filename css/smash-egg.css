@@ -1,0 +1,246 @@
+/**
+*author: yjc
+*time: 2017.8.15
+*/
+*{
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+a{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.dib{
+    display: inline-block;
+    vertical-align: middle;
+}
+.clear{
+    clear: both;
+}
+.page-main-box{
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    background: url(../images/page-bg.jpg) #167ce0 no-repeat;
+    background-size: 100% auto;
+    padding-bottom: .5rem;
+    overflow: hidden;
+}
+.logo-box{
+    width: 1.51rem;
+    margin: 0 auto 0;
+    padding-top: .5rem;
+    overflow: hidden;
+    font-size: 0;
+    -webkit-animation: fadeInDown 1s ease-in-out both;
+    animation: fadeInDown 1s ease-in-out both;
+}
+.logo-box>img{
+    width: 100%;
+}
+.tit-group{
+    position: relative;
+    width: 4.97rem;
+    height: 2.35rem;
+    margin: .53rem auto 0;
+    font-size: 0;
+    text-align: center;
+}
+.tit-group i,.tit-group>.tit-box{
+    position: relative;
+    z-index: 1;
+}
+.back-mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 4.97rem;
+    height: 2.35rem;
+    background: url(../images/tit-bg.png) no-repeat;
+    background-size: 100% auto;
+    -webkit-animation: fadeIn 1s ease-in-out .8s both;
+    animation: fadeIn 1s ease-in-out .8s both;
+}
+.tit-group>.tit-box>.txt1{
+    float: left;
+    width: 2.37rem;
+    height: .77rem;
+    background: url(../images/tit1.png) no-repeat;
+    background-size: 100% auto;
+    -webkit-animation: bounceInDown 1s ease-in-out .3s both;
+    animation: bounceInDown 1s ease-in-out .3s both;
+}
+.tit-group>.tit-box>.txt2{
+    float: right;
+    width: 2.36rem;
+    height: .77rem;
+    background: url(../images/tit2.png) no-repeat;
+    background-size: 100% auto;
+    -webkit-animation: bounceInRight 1s ease-in-out .5s both;
+    animation: bounceInRight 1s ease-in-out .5s both;
+}
+.tit-group>.prompt-txt{
+    width: 4.14rem;
+    height: .33rem;
+    background: url(../images/tit-prompt.png) no-repeat;
+    background-size: 100% auto;
+    margin-top: .57rem;
+    -webkit-animation: fadeIn 1s ease-in-out .8s both;
+    animation: fadeIn 1s ease-in-out .8s both;
+}
+.icon-group{
+    position: absolute;
+    top: .88rem;
+    left: 0;
+    z-index: 0;
+    width: 6.4rem;
+    height: 2.83rem;
+    background: url(../images/icon-group.png) no-repeat;
+    background-size: 100% auto;
+    -webkit-animation: bounceIn 1s ease-in-out .8s both;
+    animation: bounceIn 1s ease-in-out .8s both;
+}
+.prompt-group{
+    position: relative;
+    text-align: center;
+    font-size: 0;
+    margin-top: .25rem;
+    -webkit-animation: fadeInUp 1.5s ease-in-out 2s both;
+    animation: fadeInUp 1.5s ease-in-out 2s both;
+}
+.prompt-group>.tit{
+    font-size: .26rem;
+    color: #fff;
+    font-weight: 700;
+}
+.prompt-group>.txt{
+    font-size: .26rem;
+    color: #fff;
+    line-height: .48rem;
+    margin-top: .2rem;
+}
+.prompt-group>.txt>span{
+    color: #ffea3a;
+    font-weight: 700;
+}
+.prompt-group>.active-rule-btn{
+    font-size: .2rem;
+    color: #fff;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #fff;
+    margin-top: .4rem;
+}
+/*活动说明弹窗 start*/
+.active-explain-pop{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: rgba(0, 0, 0, .5);
+}
+.active-explain-cont{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 0;
+}
+.active-explain-main{
+    width: 5.8rem;
+    padding: .25rem .2rem .25rem;
+    border-radius: .1rem;
+    background: #fff;
+}
+.active-explain-main>.tit{
+    font-size: .28rem;
+    color: #333;
+    font-weight: 700;
+    text-align: center;
+}
+.active-explain-main>.describe{
+    font-size: .26rem;
+    color: #333;
+    /*font-weight: lighter;*/
+    line-height: .45rem;
+    margin-top: .06rem;
+}
+.active-explain-cont>.close-btn{
+    display: block;
+    width: .5rem;
+    height: .5rem;
+    background: url(../images/close-icon.png) no-repeat;
+    background-size: 100% auto;
+    margin: .28rem auto 0;
+}
+/*活动说明弹窗 end*/
+.stage-egg-group{
+    -webkit-animation: fadeInUp 1s ease-in-out 1.5s both;
+    animation: fadeInUp 1s ease-in-out 1.5s both;
+    margin-top: -.9rem;
+}
+.stage-egg-group>.people-icon{
+    position: absolute;
+    width: 1.52rem;
+    height: 1.52rem;
+}
+.stage-egg-group>.people01{
+    left: -.4rem;
+    bottom: .35rem;
+    background: url(../images/people01.png) no-repeat;
+    background-size: cover;
+    -webkit-animation: fadeInLeft 1s ease-in-out 2s both;
+    animation: fadeInLeft 1s ease-in-out 2s both;
+}
+.stage-egg-group>.people02{
+    left: .75rem;
+    bottom: -.3rem;
+    background: url(../images/people02.png) no-repeat;
+    background-size: cover;
+    -webkit-animation: fadeInUp 1s ease-in-out 1.8s both;
+    animation: fadeInUp 1s ease-in-out 1.8s both;
+}
+.stage-egg-group>.people03{
+    right: 1.35rem;
+    bottom: -.35rem;
+    background: url(../images/people03.png) no-repeat;
+    background-size: cover;
+    -webkit-animation: fadeInUp 1s ease-in-out 2s both;
+    animation: fadeInUp 1s ease-in-out 2s both;
+}
+.stage-egg-group>.people04{
+    right: -.4rem;
+    bottom: .15rem;
+    background: url(../images/people04.png) no-repeat;
+    background-size: cover;
+    -webkit-animation: fadeInRight 1s ease-in-out 1.8s both;
+    animation: fadeInRight 1s ease-in-out 1.8s both;
+}
+.prompt-group>.gold1{
+    position: absolute;
+    top: -.1rem;
+    right: .7rem;
+    width: .35rem;
+    height: .35rem;
+    background: url(../images/gold01.png) no-repeat;
+    background-size: cover;
+    -webkit-animation: fadeIn 1s ease-in-out 2.7s both;
+    animation: fadeIn 1s ease-in-out 2.7s both;
+}
+.prompt-group>.gold2{
+    position: absolute;
+    top: 1.34rem;
+    left: .35rem;
+    width: .42rem;
+    height: .42rem;
+    background: url(../images/gold02.png) no-repeat;
+    background-size: cover;
+    -webkit-animation: fadeIn 1s ease-in-out 2.7s both;
+    animation: fadeIn 1s ease-in-out 2.7s both;
+}
